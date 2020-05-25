@@ -53,9 +53,16 @@ body {
 }
 
 #user p {
-  display: inline;
-  vertical-align: middle;
   margin-left: 0.75em;
+  text-align: left;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+#user p a {
+  display: block;
+  margin-right: 0.75em;
+  text-align: right;
 }
 
 #news {
