@@ -34,8 +34,17 @@
         }
 
         .navbar {
-            display: flex;
+            display: inline-block;
             background-color: #333;
+            margin-top: 0px;
+            width: 100%;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+        .navbar li {
+            display: inline;
+            padding-left: 20px;
         }
 
         .navbar a {
@@ -70,17 +79,30 @@
         .fakeimg {
             background-color: #aaa;
             width: 100%;
-            padding: 20px;
+            padding: 0px;
+        }
+
+        .fakeimg img {
+            width: inherit;
+            height: inherit;
         }
 
         .bigimg {
             height: 200px;
         }
 
-        .smallimg {
+        .smallimg1 {
             height: 60px;
+            background: url("../images/decor3.jpg") repeat-x;
         }
-
+        .smallimg2 {
+            height: 60px;
+            background: url("../images/decor1.jpg") repeat-x;
+        }
+        .smallimg3 {
+            height: 60px;
+            background: url("../images/decor4.jpg") repeat;
+        }
         .footer {
             padding: 20px;
             text-align: center;
@@ -88,7 +110,9 @@
         }
 
         @media screen and (max-width: 700px) {
-            .content, .navbar {
+
+            .content,
+            .navbar {
                 flex-direction: column;
             }
         }
@@ -105,35 +129,35 @@
         <p>Proident nisi minim eiusmod aute.</p>
     </div>
 
-    <div class="navbar">
-        <a href="#">Menu 1</a>
-        <a href="#">Menu 2</a>
-        <a href="#">Menu 3</a>
-        <a href="#">Menu 4</a>
-    </div>
+    <ul class="navbar">
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+        <li><a href="#">Menu 4</a></li>
+    </ul>
 
     <div class="content">
         <div class="side">
             <h2>About Us</h2>
             <h5>Our ofiice</h5>
-            <div class="fakeimg bigimg">Image</div>
+            <div class="fakeimg bigimg"><img src="https://i.picsum.photos/id/505/290/200.jpg" alt="photo"></div>
             <p>Ut sunt elit ipsum reprehenderit nulla.</p>
             <p>Ut sunt elit ipsum reprehenderit nulla.</p>
 
             <h3>In est officia veniam enim ea ipsum.</h3>
             <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
-            <div class="fakeimg smallimg">Image 1</div>
+            <div class="fakeimg smallimg1">Image 1</div>
             <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
-            <div class="fakeimg smallimg">Image 2</div>
+            <div class="fakeimg smallimg2">Image 2</div>
             <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
-            <div class="fakeimg smallimg">Image 3</div>
+            <div class="fakeimg smallimg3">Image 3</div>
             <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
         </div>
 
         <div class="main">
             <h2>Commodo dolore quis non cupidatat.</h2>
             <h5>Commodo aliquip pariatur ullamco occaecat veniam sit.</h5>
-            <div class="fakeimg bigimg">Image</div>
+            <div class="fakeimg bigimg"><img src="https://i.picsum.photos/id/506/900/200.jpg" alt="photo"></div>
             <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
             <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
             <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
@@ -143,7 +167,7 @@
 
             <h2>Commodo dolore quis non cupidatat.</h2>
             <h5>Commodo aliquip pariatur ullamco occaecat veniam sit.</h5>
-            <div class="fakeimg bigimg">Image</div>
+            <div class="fakeimg bigimg"><img src="https://i.picsum.photos/id/174/900/200.jpg" alt="photo"></div>
             <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
             <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
             <p>Cupidatat elit sint non consectetur laborum veniam velit dolore excepteur proident deserunt.</p>
