@@ -6,8 +6,11 @@
     <title>Flex site</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="../styles/grid992.css">
+    <link rel="stylesheet" href="../styles/grid.css">
+    
+    
+    <!-- <style>
         * {
             box-sizing: border-box;
         }
@@ -79,6 +82,20 @@
 
         .smallimg {
             height: 60px;
+<<<<<<< Updated upstream
+=======
+            background: url("../images/decor3.jpg") repeat-x;
+        }
+
+        .smallimg2 {
+            height: 60px;
+            background: url("../images/decor1.jpg") repeat-x;
+        }
+
+        .smallimg3 {
+            height: 60px;
+            background: url("../images/decor4.jpg") repeat;
+>>>>>>> Stashed changes
         }
 
         .footer {
@@ -92,28 +109,37 @@
                 flex-direction: column;
             }
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
-    <div class="note">
+    <div class="note col12">
         <h4>Consequat duis sint tempor nostrud esse sunt elit aute velit reprehenderit quis Lorem.</h4>
     </div>
 
-    <div class="header">
+    <div class="header col12">
         <h1>Megacorporation</h1>
         <p>Proident nisi minim eiusmod aute.</p>
     </div>
 
+<<<<<<< Updated upstream
     <div class="navbar">
         <a href="#">Menu 1</a>
         <a href="#">Menu 2</a>
         <a href="#">Menu 3</a>
         <a href="#">Menu 4</a>
     </div>
+=======
+    <ul class="navbar col12">
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+        <li><a href="#">Menu 4</a></li>
+    </ul>
+>>>>>>> Stashed changes
 
-    <div class="content">
-        <div class="side">
+    <div class="clearfix">
+        <div class="side grid-col4 grida-col12">
             <h2>About Us</h2>
             <h5>Our ofiice</h5>
             <div class="fakeimg bigimg">Image</div>
@@ -130,7 +156,7 @@
             <p>Ut exercitation deserunt qui minim esse fugiat laboris duis cillum fugiat.</p>
         </div>
 
-        <div class="main">
+        <div class="main grid-col8 grida-col12">
             <h2>Commodo dolore quis non cupidatat.</h2>
             <h5>Commodo aliquip pariatur ullamco occaecat veniam sit.</h5>
             <div class="fakeimg bigimg">Image</div>
@@ -151,7 +177,7 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer col-12">
         <h2>Sint ad et tempor culpa fugiat in qui sunt officia velit.</h2>
     </div>
 </body>
