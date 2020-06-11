@@ -223,6 +223,43 @@ h2 {
   font-size: 85%;
 }
 
+  /* Forms */
+  #authorization p {
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(13, 70, 11);
+}
+  #authorization label {
+    display: inline-block;
+    width: 4em;
+    font-weight: 600;
+    color: rgb(25, 9, 117);
+    text-align: right;
+  }
+  #authorization input {
+    width: 10em;
+    box-sizing: border-box;
+    margin-top: 1em;
+    border-color: #000;
+  }
+  #male {
+    color: black;
+  }
+  #authorization button {
+    display: block;
+    width: 5em;
+    margin: 1em auto;
+    text-align: center;
+  }
+  #authorization button:last-child {
+    margin-top: 0em;
+    margin-left: 25em;
+    text-align: center;
+    color: red;
+  }
+
 /* Media query */
 
 @media (max-width: 600px) {
@@ -246,3 +283,4 @@ h2 {
     flex-grow: 1;
     margin-left: 0em;
   }
+
