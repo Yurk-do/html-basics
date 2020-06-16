@@ -1,0 +1,218 @@
+/* Geometry */
+
+body {
+    position: relative;
+    margin: 0em 3em;
+}
+
+#title {
+    position: absolute;
+    left: 0;
+    top: 1.5em;
+    height: 6em;
+    width: 100%;
+}
+
+#title h1 {
+    line-height: 2.5em;
+    margin: 0em;
+    padding: 0em 0.5em;
+}
+
+#meta {
+    margin-top: 1.5em;
+    margin-right: 28.8em;
+}
+
+#meta p {
+    margin: 0.5em 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.1em 0.6em;
+}
+
+#title,
+    {
+    border-style: solid;
+    border-width: 1px;
+}
+#title a {
+    text-decoration: none;
+    color:inherit;
+}
+/* Colors ******************/
+
+html {
+    background: url(../images/pix-window-bg.png) white left top repeat-x;
+}
+
+#title {
+    background: url(../images/pix-title-bg.png) #638f7b right center no-repeat;
+    border-color: #2a3d34;
+}
+
+h1 {
+    background: url(../images/h1-bg.png) transparent left center repeat-x;
+}
+
+h2 {
+    background: url(../images/h2-bg.png) #2a3d34 left top repeat-x;
+}
+
+h1,
+h2 {
+    color: #fbcf64;
+}
+
+#meta,
+#meta a {
+    color: #ccc;
+}
+
+/* Fonts *******************/
+
+body {
+    font: small Tahoma, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 250%;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 130%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#meta {
+    font-size: 85%;
+}
+
+
+
+/* Forms-fonts*/
+
+form {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+form > h2 {
+    font-size: 1em;
+}
+
+
+/* Form-geometry */
+form {
+    padding-top: 6em;
+}
+form > h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+#form-conteiner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#form-personal {
+    width: 49%;
+    display: flex;
+    flex-flow: row wrap;
+}
+#passport-data, #address {
+    width: 100%;
+}
+label[for=firstname], label[for=middlename], label[for=lastname] {
+    display: inline-block;
+    width: 7em;
+    padding-left: 3em;
+    padding-bottom: 1em;
+}
+ul {
+    display: inline-block;
+    list-style-type: none;
+    width: 40%;
+    text-align: left;
+}
+
+#form-questions {
+    width: 49%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-left: 2em;
+}
+#hobb-form, #lang-form {
+    width: 50%;
+}
+#hobb-form {
+
+}
+
+
+
+/* Form-colors */
+/* #form-personal {
+    background-color: chartreuse;
+}
+#form-questions {
+    background-color: blue;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query */
+
+@media (max-width: 600px) {
+    #content {
+        display: flex;
+        padding-top: 9em;
+        flex-flow: wrap row;
+        justify-content: space-between;
+    }
+
+    #main {
+        order: 3;
+        flex-grow: 2;
+    }
+
+    #sections {
+        order: 1;
+        flex-grow: 1;
+        margin-right: 0em;
+    }
+
+    #news {
+        order: 2;
+        flex-grow: 1;
+        margin-left: 0em;
+    }
